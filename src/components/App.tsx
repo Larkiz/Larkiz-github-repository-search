@@ -12,7 +12,7 @@ import { Repository, StoreStateReposType } from "../utils/types/repository";
 import { Grid } from "@mui/material";
 import { SelectedRepository } from "./SelectedRepository/SelectedRepository";
 
-const token =
+const accessToken =
   "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";
 
 // интерфейс полученных с сервера данных
@@ -42,7 +42,7 @@ function App() {
 
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${accessToken}`,
       },
 
       body: JSON.stringify({
