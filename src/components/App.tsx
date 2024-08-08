@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import "../assets/styles/App.scss";
-import "../assets/styles/header/header.scss";
 import { Footer } from "./Footer/Footer";
-
 import { GithubSearchScheme } from "../utils/GraphQlSchemes/github.scheme";
 import { useDispatch, useSelector } from "react-redux";
 import { startPending, set } from "../utils/slices/repoSlice/repo";
@@ -11,6 +8,8 @@ import { Repositories } from "./Repositories/Repositories";
 import { Repository, StoreStateReposType } from "../utils/types/repository";
 import { Grid } from "@mui/material";
 import { SelectedRepository } from "./SelectedRepository/SelectedRepository";
+
+import "../assets/styles/App.scss";
 
 const accessToken =
   "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";
