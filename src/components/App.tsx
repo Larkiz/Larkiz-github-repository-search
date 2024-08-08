@@ -12,7 +12,8 @@ import { Repository, StoreStateReposType } from "../utils/types/repository";
 import { Grid } from "@mui/material";
 import { SelectedRepository } from "./SelectedRepository/SelectedRepository";
 
-const token = "ACCESS_TOKEN";
+const token =
+  "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";
 
 // интерфейс полученных с сервера данных
 interface FetchRepositories {
