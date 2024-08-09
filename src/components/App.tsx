@@ -11,8 +11,7 @@ import { SelectedRepository } from "./SelectedRepository/SelectedRepository";
 
 import "../assets/styles/App.scss";
 
-const accessToken =
-  "Z2l0aHViX3BhdF8xMUFNM1VWV0EwN2VnTWlZZ1R3UDRDX0pnVjdiQkJndVZYbHB6SmdkTWlKVEUybVp5RzBXdGR3dER2MmtpZU8zQnFZMkM2VldHMlVBa3ZoNmV5";
+const accessToken = "ACCESS_TOKEN";
 
 // интерфейс полученных с сервера данных
 interface FetchRepositories {
@@ -41,7 +40,7 @@ function App() {
 
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${atob(accessToken)}`,
+        Authorization: `Bearer ${accessToken}`,
       },
 
       body: JSON.stringify({
