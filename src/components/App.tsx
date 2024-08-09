@@ -11,8 +11,7 @@ import { SelectedRepository } from "./SelectedRepository/SelectedRepository";
 
 import "../assets/styles/App.scss";
 
-const accessToken =
-  "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";
+const accessToken = "ACCESS_TOKEN";
 
 // интерфейс полученных с сервера данных
 interface FetchRepositories {
