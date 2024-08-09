@@ -12,7 +12,7 @@ import { SelectedRepository } from "./SelectedRepository/SelectedRepository";
 import "../assets/styles/App.scss";
 
 const accessToken =
-  "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";
+  "f34d43f173e7e655d581377c1f432bb94b4c8f5e5cc07ca03d687455064ac3df";
 
 // интерфейс полученных с сервера данных
 interface FetchRepositories {
@@ -51,9 +51,17 @@ function App() {
         },
       }),
     })
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw res;
+        return res.json();
+      })
       .then((data: FetchRepositories) => {
         dispatch(set(data.data.search.nodes));
+      })
+      .catch((err) => {
+        if (err.status === 401) {
+          console.error("Pass the token");
+        }
       });
   }
 
