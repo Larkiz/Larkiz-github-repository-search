@@ -12,7 +12,7 @@ import { SelectedRepository } from "./SelectedRepository/SelectedRepository";
 import "../assets/styles/App.scss";
 
 const accessToken =
-  "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";
+  "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";
 
 // интерфейс полученных с сервера данных
 interface FetchRepositories {
