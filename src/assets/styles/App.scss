@@ -1,11 +1,9 @@
 // импорты
-@import "./header/header.scss";
-@import "./footer/footer.scss";
+@import "./header/header";
+@import "./footer/footer";
 
-@import "./repositories/results.scss";
-@import "./repositories/selected.scss";
-
-@import "./repositories/selected.scss";
+@import "./repositories/results";
+@import "./repositories/selected";
 
 // второстепенные стили
 * {
